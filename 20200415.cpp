@@ -208,61 +208,64 @@ int main(){
     
 
     int n;
-    cin >> n;
-    switch (n){
 
-    case 1:
-        cout << "===================================  Class " << i+1 << " =========================================\n";
-        s=1;
-        for(int j=0;j<30;j++){
-            cout << "Student ID : ";
-            cout << s << "\n";
-            cout << "Chinese ==> [" << score[i][j][0] << "] " << "\n";
-            cout << "English ==> [" << score[i][j][1] << "] " << "\n";
-            cout << "Math    ==> [" << score[i][j][2] << "] " << "\n";
-            s++;
-        }
-        break;
-    case 2:
-        cout << "===================================  Class " << i+1 << " =========================================\n";
-        s=2;
-        for(int j=0;j<30;j++){
-            cout << "Student ID : ";
-            cout << s << "\n";
-            cout << "Chinese ==> [" << score[i][j][0] << "] " << "\n";
-            cout << "English ==> [" << score[i][j][1] << "] " << "\n";
-            cout << "Math    ==> [" << score[i][j][2] << "] " << "\n";
-            s++;
-        }
-        break;
-    case 3:
-        cout << "===================================  Class " << i+1 << " =========================================\n";
-        s=3;
-        for(int j=0;j<30;j++){
-            cout << "Student ID : ";
-            cout << s << "\n";
-            cout << "Chinese ==> [" << score[i][j][0] << "] " << "\n";
-            cout << "English ==> [" << score[i][j][1] << "] " << "\n";
-            cout << "Math    ==> [" << score[i][j][2] << "] " << "\n";
-            s++;
-        }
-        break;
-        case 4:
-        for(int i=0;i<3;i++){
-            cout << "===================================  Class " << i+1 << " =========================================\n";
+    while(cin >> n){
+        switch (n){
+
+        case 1:
+            cout << "===================================  Class 1 =========================================\n";
             s=1;
             for(int j=0;j<30;j++){
                 cout << "Student ID : ";
                 cout << s << "\n";
-                cout << "Chinese ==> [" << score[i][j][0] << "] " << "\n";
-                cout << "English ==> [" << score[i][j][1] << "] " << "\n";
-                cout << "Math    ==> [" << score[i][j][2] << "] " << "\n";
+                cout << "Chinese ==> [" << score[1][j][0] << "] " << "\n";
+                cout << "English ==> [" << score[1][j][1] << "] " << "\n";
+                cout << "Math    ==> [" << score[1][j][2] << "] " << "\n";
                 s++;
             }
+            break;
+        case 2:
+            cout << "===================================  Class 2 =========================================\n";
+            s=2;
+            for(int j=0;j<30;j++){
+                cout << "Student ID : ";
+                cout << s << "\n";
+                cout << "Chinese ==> [" << score[2][j][0] << "] " << "\n";
+                cout << "English ==> [" << score[2][j][1] << "] " << "\n";
+                cout << "Math    ==> [" << score[2][j][2] << "] " << "\n";
+                s++;
+            }
+            break;
+        case 3:
+            cout << "===================================  Class 3 =========================================\n";
+            s=3;
+            for(int j=0;j<30;j++){
+                cout << "Student ID : ";
+                cout << s << "\n";
+                cout << "Chinese ==> [" << score[3][j][0] << "] " << "\n";
+                cout << "English ==> [" << score[3][j][1] << "] " << "\n";
+                cout << "Math    ==> [" << score[3][j][2] << "] " << "\n";
+                s++;
+            }
+            break;
+            case 4:
+            for(int i=0;i<3;i++){
+                cout << "===================================  Class " << i+1 << " =========================================\n";
+                s=1;
+                for(int j=0;j<30;j++){
+                    cout << "Student ID : ";
+                    cout << s << "\n";
+                    cout << "Chinese ==> [" << score[i][j][0] << "] " << "\n";
+                    cout << "English ==> [" << score[i][j][1] << "] " << "\n";
+                    cout << "Math    ==> [" << score[i][j][2] << "] " << "\n";
+                    s++;
+                }
+            }
+            case 0: return 0;
+        default:
+            
+            break;
         }
-    default:
-        
-        break;
     }
 
 
