@@ -151,8 +151,12 @@ score =[
             [83, 40, 56],
             [13, 27, 15]]]
 
+def setw(a):
+    for i in range(a):
+        print(" ")
+
 for i in range(3):
-    for j in range(50):
+    for j in range(30):
         sum[i][j] = score[i][j][1] + score[i][j][2] + score[i][j][3]
         ave[i][j] = sum[i][j] / 3.0
     
@@ -173,9 +177,9 @@ s = 1
 for i in range(3):
     s = 1
     print(f"====================== Class {i+1} scores table ==============================================\n")
-    print(f"ID\t" << setw(15) << "Chinese" << setw(15) << "English" << setw(15) << "Math" << setw(15) << "Sum" << setw(12) << "\tAVE\n")
+    print(f"ID\t{setw(15)}Chinese{setw(15)}English{setw(15)}Math{setw(15)}Sum{setw(12)}\tAVE\n")
     for j in range(30):
-        cout << s << "\t" << setw(15) << score[i][j][0] << setw(15) << score[i][j][1] << setw(15) << score[i][j][2] << setw(15) << sum[i][j] << setw(12) << fixed << setprecision(2) << "\t" << ave[i][j] << "\n";
+        print(f"{s}\t{setw(15)}{score[i][j][0]}{setw(15)}{score[i][j][1]}{setw(15)}{score[i][j][2]}{setw(15)}{sum[i][j]}{setw(12)} << fixed << setprecision(2) \t{ave[i][j]}\n")
         s=s+1
 
 print("==========================================================================================\n")
@@ -238,6 +242,6 @@ while 1:
             print("Choice class 1 - 3 , 4 for all , C ==> Chinese , E ==> English , M ==> Math , 0 to eixt >>")
 
     elif input == 0:
-        return 0;
+        break
     else :
         break
