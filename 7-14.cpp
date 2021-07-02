@@ -42,6 +42,8 @@ void sokoban(char a[][15],int *x,int *y)
     key=getch();
 	switch(key)
 	{
+	  case 27: //esc
+	  case 
       case 80: //¤U
         if (a[*x+1][*y]=='@')
    	      {
