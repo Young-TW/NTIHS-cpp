@@ -10,7 +10,7 @@ int main(){
     }
 
     cout << "排序前\n";
-    for(int i=9;i>0;i--){
+    for(int i=0;i<10;i++){
         cout << array[i] << ", ";
     }
 
@@ -26,7 +26,7 @@ int main(){
     }
 
     cout << "\n排序後\n";
-    for(int i=9;i>0;i--){
+    for(int i=0;i<10;i++){
         cout << array[i] << ", ";
     }
 
