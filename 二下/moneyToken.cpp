@@ -5,6 +5,7 @@
  *姓名: 王晨洋
  *日期: 5/9
  */
+
 #include <cstdio>
 int main() {
     int coin[4]= {1,5,10,50};
@@ -24,3 +25,5 @@ int main() {
     }
     return 0;
 }
+
+// done
